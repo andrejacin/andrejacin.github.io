@@ -1,0 +1,77 @@
+@font-face {
+    src: url(fonts/entypo.woff);
+    font-family : entypo;
+}
+
+#player {
+    height: 515px;
+    width: 200px;
+    background: #7b7b7b;
+    border: 3px solid #7b7b7b;
+    border-top-width: 0;
+    border-radius: 5px 5px 10px 10px;
+}
+
+#player #controls {
+    width: inherit;
+    border-bottom: 3px solid #7b7b7b;
+    border-top: 3px solid #7b7b7b;
+    overflow: auto;
+}
+
+#player input[type=button] {
+    background: inherit;
+    color: white;
+    border: none;
+    border-right: 1px solid #ccc;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 25px;
+    cursor: pointer;
+    font-family: entypo;
+    font-size: 1.4em;
+    display: block;
+    float: left;
+}
+
+#player input[type=button]:hover {
+    color: yellow;
+}
+
+#player input[type=button]:disabled {
+    color: #a0a0a0;
+    cursor: auto;
+}
+
+#player #volume {
+    margin: 3px 0 0 10px;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+
+#player #playlist {
+    width: inherit;
+    height: 480px;
+    background: #383838;
+    background: linear-gradient(#383838, #070707);
+    padding: 3px 0 0 0;
+    overflow: hidden;
+}
+
+.song {
+    margin: 0;
+    padding: 1px 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    display: inline-block;
+    position: relative;
+}
+
+.current-song {
+    color: #80a53b;
+}
